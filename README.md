@@ -9,6 +9,9 @@ A command line tool to randomly sample k items from an input S containing n item
 Installation
 ------------
 
+	# From PyPI
+	pip install reservoir-sampling-cli # From PyPI
+	# From Github
 	pip install -e git+ssh://git@github.com/RyanBalfanz/preservoir-sampling-cli.git#egg=resamp
 
 Usage
