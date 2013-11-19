@@ -34,10 +34,10 @@ def main(argv=None):
 
 	if args.preserve_order:
 		for item in sorted(reservoir_ordered, key=operator.itemgetter(1)):
-			args.outfile.write(unicode(item[1]))
+			args.outfile.write(item[1])
 	else:
 		for item in reservoir:
-			args.outfile.write(unicode(item))
+			args.outfile.write(item)
 
 
 if __name__ == "__main__":

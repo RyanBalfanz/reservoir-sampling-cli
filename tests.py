@@ -2,9 +2,9 @@ import sys
 import unittest
 from contextlib import contextmanager
 try:
-	from io import StringIO
+	import cStringIO as StringIO
 except ImportError:
-	from cStringIO import StringIO
+	import StringIO
 
 from sampler.command_line import main
 
@@ -32,7 +32,7 @@ class CLITestCase(unittest.TestCase):
 		self.assertEqual(the_exception.code, 0)
 
 	def test_command(self):
-		myOut = StringIO()
+		myOut = StringIO.StringIO()
 		with stdout_redirected(myOut):
 			args = r"-k 10 words.txt".split()
 			main(args)
@@ -42,7 +42,7 @@ class CLITestCase(unittest.TestCase):
 			self.assertEqual(len(output.splitlines()), 10)
 
 	def test_preserve_order(self):
-		myOut = StringIO()
+		myOut = StringIO.StringIO()
 		with stdout_redirected(myOut):
 			args = r"-k 10 words.txt --preserve-order".split()
 			main(args)
