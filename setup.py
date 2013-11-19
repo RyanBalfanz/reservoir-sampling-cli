@@ -16,5 +16,7 @@ setup(
 			'resamp = sampler.command_line:main',
 		],
 	},
+	include_package_data = True,
+	exclude_package_data = { '': ['README.md'] },
 	test_suite = "tests"
 )
