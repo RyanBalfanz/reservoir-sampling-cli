@@ -31,7 +31,7 @@ class CLITestCase(unittest.TestCase):
 	def test_command(self):
 		myOut = StringIO.StringIO()
 		with stdout_redirected(myOut):
-			args = r"-k 10 /usr/share/dict/words".split()
+			args = r"-k 10 words.txt".split()
 			main(args)
 			output = myOut.getvalue().strip()
 
@@ -41,7 +41,7 @@ class CLITestCase(unittest.TestCase):
 	def test_preserve_order(self):
 		myOut = StringIO.StringIO()
 		with stdout_redirected(myOut):
-			args = r"-k 10 /usr/share/dict/words --preserve-order".split()
+			args = r"-k 10 words.txt --preserve-order".split()
 			main(args)
 			output = myOut.getvalue().strip()
 
