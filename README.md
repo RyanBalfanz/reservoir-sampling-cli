@@ -1,6 +1,8 @@
 reservoir-sampling-cli
 ======================
 
+[![Build Status](https://travis-ci.org/RyanBalfanz/reservoir-sampling-cli.png)](https://travis-ci.org/RyanBalfanz/reservoir-sampling-cli)
+
 A command line tool to randomly sample k items from an input S containing n items.
 
 > Reservoir sampling is a family of randomized algorithms for randomly choosing a sample of k items from a list S containing n items, where n is either a very large or unknown number.
