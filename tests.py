@@ -1,7 +1,10 @@
 import sys
 import unittest
-import cStringIO as StringIO
 from contextlib import contextmanager
+try:
+	import cStringIO as StringIO
+except ImportError:
+	import StringIO
 
 from sampler.command_line import main
 
