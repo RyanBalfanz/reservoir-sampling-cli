@@ -19,7 +19,7 @@ Installation
 ------------
 
 	# From PyPI
-	pip install reservoir-sampling-cli # From PyPI
+	pip install reservoir-sampling-cli
 	# From Github
 	pip install -e git+ssh://git@github.com/RyanBalfanz/preservoir-sampling-cli.git#egg=resamp
 
